@@ -7,7 +7,7 @@ public static class Extentions
 
     public static bool Raycast(this Rigidbody2D rigidbody, Vector2 direction)
     {
-        if (rigidbody.bodyType == RigidbodyType2D.Kinematic)
+        if (rigidbody.isKinematic)
 		{
    			return false;
 		}

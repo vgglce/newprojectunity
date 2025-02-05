@@ -10,9 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 7425297947517151673}
   - component: {fileID: 264444977974003670}
+  - component: {fileID: -3459076160048201460}
   - component: {fileID: 6223057691066067244}
+  - component: {fileID: 5655911514051422158}
   - component: {fileID: 7838552490615813069}
   - component: {fileID: 533768892143620658}
+  - component: {fileID: 7066117415189591524}
   m_Layer: 7
   m_Name: Goomba
   m_TagString: Untagged
@@ -90,6 +93,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-3459076160048201460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7346183679468769365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 002e9b4106cea4335ada2f18184d6473, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flatSprite: {fileID: 21300000, guid: 98447e15f7b2b4371bcc4581ae0a8f6f, type: 3}
 --- !u!50 &6223057691066067244
 Rigidbody2D:
   serializedVersion: 5
@@ -117,6 +133,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &5655911514051422158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7346183679468769365}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ca5378f03bbd4be59cc092c1bb71229, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  direction: {x: -1, y: 0}
 --- !u!58 &7838552490615813069
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -169,3 +199,17 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   framerate: 0.16666667
+--- !u!114 &7066117415189591524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7346183679468769365}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6409b80ede9794b01807bd5a94e5920f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 264444977974003670}
+  deadSprite: {fileID: 0}
